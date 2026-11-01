@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+    <div>
+        <nav>
+            <h1>check model status</h1>
+            <h2>{{model_exists}}</h2>
+            <h1>llm status</h1>
+            <h2>{{llm_status}}</h2>
+            <h2>{{ai_msg}}</h2>
+
+        </nav>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Auralis",
+    "slug": "auralis",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "scheme": [
+      "myapp",
+      "com.aryansharma.heartdiseaseapp",
+      "com.googleusercontent.apps.969098472980-213deq4egm8ab4kcgaq9vkkdkps7lhqs",
+      "com.googleusercontent.apps.969098472980-0n6u2tbrk9j6g14je8sduu1pr19gaqum"
+    ],
+    "ios": {
+      "icon": "./assets/images/icon.png",
+      "bundleIdentifier": "com.aryansharma.heartdiseaseapp",
+      "supportsTablet": true,
+      "userInterfaceStyle": "automatic",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "userInterfaceStyle": "automatic",
+      "predictiveBackGestureEnabled": false,
+      "package": "com.aryansharma.heartdiseaseapp"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120
+        }
+      ],
+      "expo-sharing",
+      "expo-web-browser",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.969098472980-0n6u2tbrk9j6g14je8sduu1pr19gaqum"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "bd90ae69-fe0c-4df5-b9cf-d98352cce74a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/bd90ae69-fe0c-4df5-b9cf-d98352cce74a"
+    }
+  }
+}
